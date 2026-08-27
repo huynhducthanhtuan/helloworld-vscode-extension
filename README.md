@@ -1,16 +1,16 @@
 # Hello World VS Code Extension
 
-Extension đơn giản hiển thị thông báo "Hello World" dạng popup trong VS Code. Dự án này được tạo để học cách xây dựng, chạy thử và publish một VS Code extension từ đầu đến cuối.
+Extension đơn giản hiển thị thông báo "Hello World" dạng toast message trong VS Code. Dự án này được tạo để học cách xây dựng, chạy thử và publish một VS Code extension từ đầu đến cuối.
 
 ## Tổng quan
 
-Extension đăng ký một command duy nhất (`Hello World`). Khi gọi command này qua Command Palette, một popup thông báo sẽ hiện ra ở góc dưới bên phải màn hình VS Code.
+Extension đăng ký một command duy nhất (`Hello World`). Khi gọi command này qua Command Palette, một thông báo sẽ hiện ra ở góc dưới bên phải màn hình VS Code.
 
 ## Yêu cầu
 
 - [Node.js](https://nodejs.org/) (khuyến nghị bản LTS)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- Git (để clone/push repo)
+- Git (để clone repo)
 
 ## Cài đặt môi trường phát triển
 
@@ -58,7 +58,7 @@ code .
 4. Trong cửa sổ **Extension Development Host** vừa mở:
    - Nhấn `Ctrl+Shift+P` (Windows/Linux) hoặc `Cmd+Shift+P` (macOS) để mở **Command Palette**
    - Gõ **"Hello World"** → chọn command
-   - Popup thông báo sẽ hiện ra
+   - Toast message thông báo sẽ hiện ra
 
 5. Nếu sửa code, quay lại cửa sổ gốc và nhấn `Ctrl+Shift+F5` để restart debug, hoặc trong Extension Host nhấn `Ctrl+R` / `Cmd+R` để reload.
 
@@ -81,7 +81,7 @@ code --install-extension hello-popup-0.1.0.vsix
 
 ## Tính năng
 
-- Hiển thị popup "Hello World" thông qua command `Hello World` trong Command Palette
+- Hiển thị toast message "Hello World" thông qua command `Hello World` trong Command Palette
 
 ## Known Issues
 
@@ -91,6 +91,6 @@ Chưa ghi nhận issue nào.
 
 ### 0.1.0
 
-Phiên bản đầu tiên — hiển thị popup Hello World.
+Phiên bản đầu tiên — hiển thị toast message Hello World.
 
 ---

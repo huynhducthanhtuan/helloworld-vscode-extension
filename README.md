@@ -94,3 +94,5 @@ Chưa ghi nhận issue nào.
 Phiên bản đầu tiên — hiển thị toast message Hello World.
 
 ---
+
+Bản quyền thuộc về Huỳnh Đức Thanh Tuấn 08/2026

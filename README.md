@@ -1,71 +1,96 @@
-# helloworld-vscode-extension README
+# Hello World VS Code Extension
 
-This is the README for your extension "helloworld-vscode-extension". After writing up a brief description, we recommend including the following sections.
+Extension đơn giản hiển thị thông báo "Hello World" dạng popup trong VS Code. Dự án này được tạo để học cách xây dựng, chạy thử và publish một VS Code extension từ đầu đến cuối.
 
-## Features
+## Tổng quan
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Extension đăng ký một command duy nhất (`Hello World`). Khi gọi command này qua Command Palette, một popup thông báo sẽ hiện ra ở góc dưới bên phải màn hình VS Code.
 
-For example if there is an image subfolder under your extension project workspace:
+## Yêu cầu
 
-\!\[feature X\]\(images/feature-x.png\)
+- [Node.js](https://nodejs.org/) (khuyến nghị bản LTS)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- Git (để clone/push repo)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Cài đặt môi trường phát triển
 
-## Requirements
+Cài các công cụ cần thiết để tạo và publish extension:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+```bash
+npm install -g yo generator-code @vscode/vsce
+```
 
-## Extension Settings
+- **yo** + **generator-code**: sinh (scaffold) project extension theo template chuẩn của VS Code
+- **@vscode/vsce**: đóng gói (`.vsix`) và publish extension lên Marketplace
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Khởi tạo project (nếu tạo mới từ đầu)
 
-For example:
+```bash
+yo code
+```
 
-This extension contributes the following settings:
+Chọn:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- **New Extension (TypeScript)**
+- Đặt tên extension, identifier, publisher theo ý bạn
+- Các câu hỏi khác có thể để mặc định (Enter)
+
+## Chạy dự án ở local
+
+1. Clone repo về máy và cài dependencies:
+
+```bash
+git clone https://github.com/huynhducthanhtuan/helloworld-vscode-extension.git
+cd helloworld-vscode-extension
+npm install
+```
+
+2. Mở project bằng VS Code:
+
+```bash
+code .
+```
+
+3. Nhấn **`F5`** (hoặc menu **Run → Start Debugging**)
+
+→ VS Code sẽ compile code và mở ra một cửa sổ mới gọi là **Extension Development Host** — đây là môi trường test, extension đã được load sẵn.
+
+4. Trong cửa sổ **Extension Development Host** vừa mở:
+   - Nhấn `Ctrl+Shift+P` (Windows/Linux) hoặc `Cmd+Shift+P` (macOS) để mở **Command Palette**
+   - Gõ **"Hello World"** → chọn command
+   - Popup thông báo sẽ hiện ra
+
+5. Nếu sửa code, quay lại cửa sổ gốc và nhấn `Ctrl+Shift+F5` để restart debug, hoặc trong Extension Host nhấn `Ctrl+R` / `Cmd+R` để reload.
+
+### Watch mode (tùy chọn)
+
+Nếu muốn tự động compile mỗi khi sửa code:
+
+```bash
+npm run watch
+```
+
+Để lệnh này chạy nền, sau đó chỉ cần reload cửa sổ Extension Host (`Ctrl+R`) để thấy thay đổi.
+
+## Đóng gói & cài thử như extension thật
+
+```bash
+vsce package
+code --install-extension hello-popup-0.1.0.vsix
+```
+
+## Tính năng
+
+- Hiển thị popup "Hello World" thông qua command `Hello World` trong Command Palette
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Chưa ghi nhận issue nào.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.1.0
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Phiên bản đầu tiên — hiển thị popup Hello World.
 
 ---
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

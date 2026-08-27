@@ -93,9 +93,9 @@ Chưa ghi nhận issue nào.
 
 ## Release Notes
 
-### 0.1.0
+### 0.0.3
 
-Phiên bản đầu tiên — hiển thị toast message Hello World.
+Phiên bản phát hành đầu tiên — hiển thị toast message Hello World.
 
 ---
 

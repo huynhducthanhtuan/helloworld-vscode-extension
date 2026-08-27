@@ -6,6 +6,10 @@ Extension đơn giản hiển thị thông báo "Hello World" dạng toast messa
 
 Extension đăng ký một command duy nhất (`Hello World`). Khi gọi command này qua Command Palette, một thông báo sẽ hiện ra ở góc dưới bên phải màn hình VS Code.
 
+<img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/af4f40a8-561a-4120-b00d-e39f629856f7" />
+<img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/287a8897-9df8-466e-a9a7-5ed23ec5e21e" />
+<img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/48236615-2e0b-4204-9a93-ea68b108337e" />
+
 ## Yêu cầu
 
 - [Node.js](https://nodejs.org/) (khuyến nghị bản LTS)

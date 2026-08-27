@@ -8,7 +8,7 @@
     "url": "https://github.com/huynhducthanhtuan/helloworld-vscode-extension.git"
   },
   "icon": "image/icon.webp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.134.0"
   },

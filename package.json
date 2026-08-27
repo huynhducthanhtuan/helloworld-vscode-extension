@@ -2,6 +2,11 @@
   "name": "helloworld-vscode-extension",
   "displayName": "helloworld-vscode-extension",
   "description": "Hello World VS Code Extension",
+  "publisher": "huynhducthanhtuan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huynhducthanhtuan/helloworld-vscode-extension.git"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.134.0"

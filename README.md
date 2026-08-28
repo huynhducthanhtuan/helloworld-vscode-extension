@@ -87,10 +87,6 @@ code --install-extension hello-popup-0.1.0.vsix
 
 - Hiển thị toast message "Hello World" thông qua command `Hello World` trong Command Palette
 
-## Known Issues
-
-Chưa ghi nhận issue nào.
-
 ## Release Notes
 
 ### 0.0.3
